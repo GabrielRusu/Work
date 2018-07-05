@@ -1,0 +1,9 @@
+<h2>All Potatoes</h2>
+
+<ul class="potatoes">
+  <li *ngFor="let potato of potatoes">
+    <a routerLink="/detail/{{potato.id}}">
+      <span class="badge">{{potato.id}}</span> {{potato.name}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,10 @@
+<h3>Top Potatoes</h3>
+
+<div class="grid grid-pad">
+  <a *ngFor="let potato of potatoes" class="col-1-4"
+     routerLink="/detail/{{potato.id}}">
+    <div class="module potato">
+      <h4>{{potato.name}}</h4>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,24 @@
+<div *ngIf="potato">
+  <button (click)="goBack()">go back</button>
+
+  <h2>{{potato.name | uppercase}} Details</h2>
+
+  <div>
+    <span>Id: </span>{{potato.id}}
+  </div>
+
+  <div>
+    <label>Name:
+      <input [(ngModel)]="potato.name" placeholder="potato"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Power: {{potato.power}}</label>
+  </div>
+
+  <div>
+    <label>Taste: {{potato.taste}}</label>
+  </div>
+
+</div>
